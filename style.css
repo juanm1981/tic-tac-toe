@@ -1,0 +1,99 @@
+:root {
+  --background-color: #c5c3c6;
+  --font-color: #46494b;
+  --header-background-color: #4c5c68;
+  --header-font-color: #b0e4db;
+  --field-background-color: #ededee;
+  --field-background-color-hover: #d8e4e9;
+  --border-color: #555;
+  --blue-border-color: #2a3a46;
+  --button-background-color: #4c5c68;
+  --button-hover-background: #3b4b57;
+  --button-active-background: #2a3a46;
+  --font: 'Varela Round', sans-serif;
+}
+
+html {
+  /* footer support */
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--font-color);
+  font-family: var(--font);
+  line-height: 1.6;
+  /* footer support */
+  margin-bottom: 80px;
+}
+
+h1 {
+  line-height: 1.2;
+}
+
+button {
+  border: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+  outline: none;
+}
+
+.header {
+  padding: 20px;
+  border-bottom: 3px solid var(--blue-border-color);
+  background-color: var(--header-background-color);
+  color: var(--header-font-color);
+}
+
+.title {
+  font-size: 100px;
+  text-align: center;
+}
+
+/* MAIN */
+
+.main {
+  padding: 0 20px;
+}
+
+.gameboard {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  width: 454px;
+  height: 454px;
+  border: 2px solid var(--border-color);
+  margin: 0px auto;
+}
+
+.field {
+  width: 150px;
+  height: 150px;
+  border: 1px solid var(black--border-color);
+  background-color: var(--field-background-color);
+  font-size: 100px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.hovered {
+    background-color: var(--field-background-color-hover);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.restart-button {
+  padding: 10px 20px;
+  border: 3px solid var(--blue-border-color);
+  border-radius: 7px;
+  background-color: var(--button-background-color);
+  color: var(--header-font-color);
+  font-size: 50px;
+}
